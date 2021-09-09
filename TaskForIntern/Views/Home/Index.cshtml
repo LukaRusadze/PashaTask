@@ -1,0 +1,29 @@
+﻿@model List<TaskForIntern.Models.TodoItemModel>
+@{
+    ViewData["Title"] = "To-Do List - Luka Rusadze";
+}
+
+<div class="text-center">
+    <h1 class="display-4">To-Do List</h1>
+
+    <form method="post" class="inputForm">
+        <input type="text" class="form-control col-lg-5" placeholder="What's your first todo?" />
+        <button type="submit" class="btn btn-success">Add</button>
+    </form>
+
+    <table class="todoList" border="1">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.ToDoItem)
+                </td>
+                <td class="itemButtons">
+                    <button class="btn btn-primary editBtn">Edit</button>
+                    <button class="btn btn-danger deleteBtn">Delete</button>
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
