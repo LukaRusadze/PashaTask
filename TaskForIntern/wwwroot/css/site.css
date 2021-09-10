@@ -8,7 +8,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .inputForm {
@@ -23,7 +22,10 @@ body {
     width: 100%;
     text-align: left;
 }
+.todoList {
 
+}
 .itemButtons {
     float:right
 }
+

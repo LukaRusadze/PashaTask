@@ -28,6 +28,29 @@ namespace TaskForIntern.Controllers
             return View(toDoItems);
         }
 
+
+        [HttpPost]
+        public IActionResult AddToTable()
+        {
+            var postData = HttpContext.Request.Form["toDoText"];
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var newItem = new TodoItemModel();
+                    newItem.ToDoItem = postData;
+                    _db.Add(newItem);
+                    _db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return RedirectToAction("Index");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
