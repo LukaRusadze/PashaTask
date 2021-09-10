@@ -1,0 +1,29 @@
+﻿@model TaskForIntern.Models.TodoItemModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="editPage">
+    <h1>Edit</h1>
+    <hr />
+
+    <form asp-action="EditPost">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="ToDoItem" class="control-label">Edit Task</label>
+            <input asp-for="ToDoItem" class="form-control" value="@Model.ToDoItem"/>
+            <input type="hidden" name="ID" value="@Model.ID" />
+            <span asp-validation-for="ToDoItem" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary saveBtn" />
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+
+

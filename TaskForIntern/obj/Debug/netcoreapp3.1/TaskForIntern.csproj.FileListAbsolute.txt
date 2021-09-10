@@ -421,3 +421,4 @@ C:\Users\Luka\source\repos\TaskForIntern\TaskForIntern\bin\Debug\netcoreapp3.1\r
 C:\Users\Luka\source\repos\TaskForIntern\TaskForIntern\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Luka\source\repos\TaskForIntern\TaskForIntern\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Luka\source\repos\TaskForIntern\TaskForIntern\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Luka\source\repos\TaskForIntern\TaskForIntern\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
